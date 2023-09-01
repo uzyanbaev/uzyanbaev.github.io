@@ -1,34 +1,38 @@
 .promo {
-	min-height: 85vh;
-	position: relative;
-	background: url("../img/main_bg3.jpg") no-repeat 45%/cover;
-	padding-top: 205px;
-	&__subtitle {
-		position: relative;
-		@include before_circle;
-		padding-left: 10px;
-		z-index: 2;
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(45deg, #EAEAEA 70%, #FFA501 30%);
+    padding-top: 200px;
+	&__img {
+		margin-left: 495px;
 	}
-	&__title {
-		width: 535px;
-		margin-top: 10px;
-	}
-	&__btns {
-		margin-top: 25px;
-		width: 250px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-	}
-	&__link {
-		color: #fff;
-		font-weight: bold;
-
-		&:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-	}
-
+    &__title {
+        width: 535px;
+        margin-top: 14px;
+		margin-left: 310px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 17px;
+		margin-left: 453px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btns {
+        margin-top: 25px;
+		margin-left: 310px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+    }
+    &__link {
+        color: #000;
+        font-weight: bold;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
 }
+
