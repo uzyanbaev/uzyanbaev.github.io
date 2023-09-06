@@ -1,0 +1,113 @@
+.portfolio {
+	padding-top: 120px;
+	min-height: 460px;
+	&__title {
+		text-align: center;
+		@include before_circle;
+		position: relative;
+		&:before {
+			top: -6px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__subtitle {
+		text-align: center;
+	}
+	
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+
+	&__item {
+		background-color: #e7e7e7c5;
+		padding: 20px;
+		border-radius: 5px;
+		text-align: center;
+		color: #000;
+	}
+
+	&__item { 
+		h3 {
+			font-size: 18px;
+			margin: 0;
+		}
+		p {
+			font-size: 14px;
+			margin: 10px 0;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+			font-weight: bold;
+		}
+		img {
+			max-width: 350px;
+			height: 250px;
+			margin: 10px 0;
+		}
+	}
+}
+
+.tabs {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0 15px 0;
+}
+
+.tab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	width: 210px;
+	height: 45px;
+	text-align: center;
+	margin: 0 20px;
+	cursor: pointer;
+	color: #000;
+	&:hover {
+		background-color: #4d4d4d;
+	}
+}
+
+.tab.active {
+	background-color: #4d4d4d;
+	color: white;
+}
+
+.content {
+	position: relative;
+	display: none;
+	margin: 0 auto;
+	width: 900px;
+	min-height: 500px; 
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+
+}
+
+.active-content {
+	display: block;
+}
+
+.buttons {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.button {
+	background-color: $main-color;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	&:hover {
+		background-color: #4d4d4d;
+	}
+}
