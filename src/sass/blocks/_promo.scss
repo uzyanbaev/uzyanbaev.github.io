@@ -1,30 +1,20 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background-image: linear-gradient(45deg, #ebebeb  70%, #808080 30%);
+    background: linear-gradient(45deg, #ebebeb  70%, #808080 30%) no-repeat 50%/cover;
     padding-top: 300px;
-
-	&__img {
-		display: block;
-		text-align: center;
-	}
     &__title {
         width: 535px;
-        margin-top: 14px;
-		margin-left: 310px;
+        margin-top: 10px;
     }
     &__subtitle {
         position: relative;
-		text-align: center;
+        padding-left: 10px;
         z-index: 2;
         @include before_circle;
-		&:before {
-			left: 445px;
-		}
     }
     &__btns {
         margin-top: 25px;
-		margin-left: 310px;
         display: flex;
         align-items: center;
         justify-content: space-between;
