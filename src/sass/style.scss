@@ -16,22 +16,25 @@
 }
 
 .divider {
-    width: 60px;
-    height: 3px;
+    width: 120px;
+    height: 5px;
     background-color: $main-color;
 	margin: 25px auto 0 auto;
 }
 
 body {
+	background-color: #0d0d0d;
 	top: 0 !important;
 }
 
+@import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/experience';
-@import 'blocks/_portfolio';
-@import 'blocks/catalog';
+@import 'blocks/portfolio';
+@import 'blocks/snow';
+@import 'blocks/modal';
 @import 'blocks/media';

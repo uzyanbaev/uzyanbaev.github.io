@@ -1,31 +1,58 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: linear-gradient(45deg, #ebebeb  70%, #808080 30%) no-repeat 50%/cover;
-    padding-top: 300px;
+    background: linear-gradient(45deg, #090909  70%, $main-color 30%) no-repeat 50%/cover;
+    padding: 300px 0 0 0;
     &__title {
+        color: #fff;
         width: 535px;
-        margin-top: 10px;
+        margin-top: 25px;
     }
     &__subtitle {
+        color: #ffffff;
         position: relative;
         padding-left: 10px;
         z-index: 2;
+		span {
+			color: #101010;
+		}
         @include before_circle;
+		&:before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: -55%;
+			left: 6px;
+			width: 140px;
+			height: 50px;
+			border-radius: 10px;
+			background: $main-color;
+		}
     }
     &__btns {
         margin-top: 25px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 250px;
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 400px;
+			height: 70px;
+			border-radius: 10px;
+			font-size: 36px;
+			z-index: 3;
+		}
     }
     &__link {
-        color: #000;
-        font-weight: bold;
+        color: #ffffff;
+        font-weight: 700;
+		transition: background-color 0.2s ease;
         &:hover {
-            color: #000;
+			color: #fff;
             text-decoration: none;
+			background-color: darken($main-color, 25%);
         }
     }
 }
