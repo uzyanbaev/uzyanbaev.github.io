@@ -1,38 +1,54 @@
-const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+const closeElem = document.querySelector('.menu__close');
+const menuLinks = document.querySelectorAll('.menu__link a, .menu__link button');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
+hamburger.addEventListener('click', toggleMenu);
+closeElem.addEventListener('click', toggleMenu);
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (menu.classList.contains('active')) {
+      toggleMenu();
+    }
+  });
 });
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
-});
-
-const counters = document.querySelectorAll('.experience__scale-counter'),
-	lines = document.querySelectorAll('.experience__scale-line span');
-counters.forEach( (item, i) => {
-	lines[i].style.width = item.innerHTML;
-});
-
-
-function showTab(tabIndex) {
-	var contents = document.querySelectorAll('.content');
-	for (var i = 0; i < contents.length; i++) {
-		contents[i].style.display = 'none';
-	}
-
-	var tabs = document.querySelectorAll('.tab');
-	for (var i = 0; i < tabs.length; i++) {
-		tabs[i].classList.remove('active');
-	}
-
-	document.getElementById('content' + tabIndex).style.display = 'block';
-	document.getElementById('tab' + tabIndex).classList.add('active');
+function toggleMenu() {
+  menu.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
 }
 
-function hideTab(tabIndex) {
-	document.getElementById('content' + tabIndex).style.display = 'none';
-	document.getElementById('tab' + tabIndex).classList.remove('active');
-}
+document.addEventListener('DOMContentLoaded', function () {
+	const modalTriggers = document.querySelectorAll('.modal-trigger');
+	const modals = document.querySelectorAll('.modal');
+	const overlay = document.querySelector('.modal__overlay');
+  
+	modalTriggers.forEach(trigger => {
+	  trigger.addEventListener('click', () => {
+		const targetModal = document.getElementById(trigger.dataset.modalTarget);
+		openModal(targetModal);
+	  });
+	});
+  
+	modals.forEach(modal => {
+	  modal.addEventListener('click', (e) => {
+		if (e.target === overlay || e.target.dataset.modalClose) {
+		  closeModal(modal);
+		}
+	  });
+	});
+  
+	function openModal(modal) {
+	  modal.style.display = 'flex';
+	}
+  
+	function closeModal(modal) {
+	  modal.querySelector('.modal__content').classList.add('fade-out');
+	  setTimeout(() => {
+		modal.style.display = 'none';
+		modal.querySelector('.modal__content').classList.remove('fade-out');
+	  }, 300);
+	}
+});
+  
