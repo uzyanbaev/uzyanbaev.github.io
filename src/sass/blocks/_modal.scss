@@ -29,26 +29,23 @@
 	  position: relative;
 	  transform: scale(1);
 	  animation: zoomIn 0.3s ease-out forwards;
-  
-	  // New fade-out animation
 	  &.fade-out {
 		animation: fadeOut 0.3s ease-out forwards;
 	  }
 	}
   
 	&__close-btn {
-	  position: absolute;
-	  top: 10px;
-	  right: 10px;
-	  cursor: pointer;
-	  background: none;
-	  border: none;
-	  font-size: 36px;
-	  color: #333;	
-	  &:focus {
-		outline: none;
-	  }
-
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 36px;
+        color: #333;	
+        &:focus {
+        outline: none;
+        }
 	}
   
 	&__title {
@@ -64,27 +61,28 @@
 	}
   }
   
-  .modal-trigger {
-	cursor: pointer;
-	padding: 10px 20px;
-	background-color: $main-color;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	font-size: 20px;
-	font-weight: 700;
-	transition: background-color 0.2s ease;
-  
+.modal-trigger {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+    cursor: url('../../img/cursor/cursor-pointer.png'), pointer !important;
 	&:hover {
 		text-decoration: none;
+		color: darken(#fff, 25%);
 		background-color: darken($main-color, 20%);
 		border: none;
 	}
   
 	&:focus {
-	  outline: none;
+        outline: none;
 	}
-  }
+}
   
 @keyframes zoomIn {
 	from {

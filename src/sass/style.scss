@@ -16,7 +16,7 @@
 }
 
 .divider {
-    width: 120px;
+    width: 150px;
     height: 5px;
     background-color: $main-color;
 	margin: 25px auto 0 auto;
@@ -25,6 +25,11 @@
 body {
 	background-color: #0d0d0d;
 	top: 0 !important;
+    cursor: url('../../src/img/cursor/cursor.png'), pointer;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 @import 'blocks/header';

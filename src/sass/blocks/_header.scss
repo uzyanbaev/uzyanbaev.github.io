@@ -3,7 +3,7 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #212121;
+    background: #141414;
     color: white;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
 		font-weight: 700;
 		svg {
 			width: 200px;
-			height: 100px;
+			height: 70px;
 		}
 	}
   
@@ -31,18 +31,18 @@
 		align-items: center;
 	  	&-title {
 			flex: 1;
-		a {
-		  color: #fff;
-		  text-decoration: none;
-			span {
-			color: $main-color;
-			}
-		}
-		svg {
-			width: 280px;
-			height: 90px;
-		}
-	  }
+            a {
+            color: #fff;
+            text-decoration: none;
+                span {
+                color: $main-color;
+                }
+            }
+            svg {
+                width: 280px;
+                height: 90px;
+            }
+	    }
   
 	  &-list {
 		list-style: none;
@@ -58,11 +58,15 @@
 		font-weight: 700;
 		color: #fff;
 		a {
+            display: inline-block;
 			color: #fff;
 			text-decoration: none;
 			position: relative;
+            transition: transform 0.3s ease;
+            cursor: url('../../img/cursor/cursor-pointer.png'), pointer !important;
 			&:hover {
 				color: $main-color;
+                transform: translateY(-3px);
 			}
 		}
 	  }

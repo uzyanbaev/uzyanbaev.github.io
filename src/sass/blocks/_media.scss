@@ -3,6 +3,7 @@
         display: none;
     }
 }
+
 @media (max-width: 1200px) {
 	.container {
         max-width: 960px;
@@ -34,12 +35,11 @@
 				content: "";
 				position: absolute;
 				z-index: -1;
-				top: -85%;
-				left: 6px;
+				top: -55%;
+				left: -3px;
 				width: 140px;
-				height: 60px;
-				border-radius: 25px;
-				background: #4fff09;
+				height: 50px;
+				border-radius: 10px;
 			}
 		}
 		&__btns {
@@ -84,7 +84,7 @@
 	.modal {
 		&__content {
 			width: 80%;
-			height: 80%;
+			height: 45%;
 		  }
 		  &__title {
 			font-size: 24px;
@@ -109,7 +109,7 @@
     }
 
 	.projects {
-		grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
 	}
 }
 
@@ -137,25 +137,20 @@
     }
 	
     .promo {
-		height: calc(100vh + 90px);
         &__title {
             width: 310px;
         }
 		&__subtitle {
-			position: relative;
-			padding-left: 10px;
-			z-index: 2;
 			@include before_circle;
 			&:before {
 				content: "";
 				position: absolute;
 				z-index: -1;
-				top: -50%;
-				left: 6px;
+				top: -25%;
+				left: -3px;
 				width: 100px;
-				height: 50px;
-				border-radius: 25px;
-				background: $main-color;
+				height: 35px;
+				border-radius: 10px;
 			}
 		}
 		&__btns {
@@ -184,16 +179,18 @@
         }
     }
 
-	.projects {
-		margin-top: 40px;
-		display: grid;
-		grid-template-columns: repeat(1, minmax(250px, 1fr));
-		gap: 25px;
-		padding: 20px;
-		background-color: #121212;;
-		border-radius: 10px;
-	}
+    .projects {
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+    }
+
+    .project {
+        min-height: 600px;
+        &__description {
+            min-height: 0px;
+        }
+    }
 }
+
 
 @media (max-width: 576px) {
     .container {
@@ -231,24 +228,36 @@
         }
     }
 
-	.portfolio {
-		&__item {
-			img {
-				width: 200px;
-				height: 150px;
-			}
-		}
-	}
+    .projects {
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+        gap: 15px;
+    }
 
-	.projects {
-		margin-top: 40px;
-		display: grid;
-		grid-template-columns: repeat(1, minmax(200px, 1fr));
-		gap: 25px;
-		padding: 20px;
-		background-color: #121212;;
-		border-radius: 10px;
-	}
+    .project {
+        min-height: 430px;
+        &__image {
+            max-width: 250px;
+            
+        }
+        &__description {
+            font-size: 12px;
+        }
+        &__links-item {
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+        }
+        &__languages {
+            bottom: 40px;
+            &-item {
+                font-size: 12px;
+            }
+        }
+        &__info {
+            min-width: 90px;
+            font-size: 12px;
+        }
+    }
 }
 
 @media (max-height: 400px) {
