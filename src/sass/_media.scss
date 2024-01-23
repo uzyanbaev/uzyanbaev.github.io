@@ -133,7 +133,6 @@
 		&_fz23 {
 			font-size: 16px;
 		}
-
     }
 	
     .promo {
@@ -198,6 +197,22 @@
         padding: 0 10px;
     }
 
+    .title {
+		&_fz58 {
+			font-size: 48px;
+			line-height: 52px;
+		}
+		&_fz46 {
+			font-size: 32px;
+		}
+		&_fz30 {
+			font-size: 24px;
+		}
+		&_fz23 {
+			font-size: 16px;
+		}
+    }
+
 	.header {
 		justify-content: left;
 		padding: 0 5px 0 5px;
@@ -216,7 +231,8 @@
 	}
 
     .promo {
-		background: linear-gradient(45deg, #090909  65%, #4fff09 35%) no-repeat 37%/cover;
+		background: linear-gradient(45deg, #000  65%, #4fff09 35%) no-repeat 37%/cover;
+        padding: 240px 0 0 0;
         &__btns {
             margin-top: 30px;
         }
@@ -225,6 +241,9 @@
     .experience {
         &__wrapper {
             padding: 40px 5px 0 5px;
+        }
+        &__item-body {
+            font-size: 14px;
         }
     }
 
