@@ -61,7 +61,6 @@ function copyEmail() {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-    // Показать сообщение
     var copyMessage = document.getElementById("copy-message");
     copyMessage.textContent = "email copied";
     setTimeout(function() { copyMessage.textContent = ""; }, 1500);
