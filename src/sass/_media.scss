@@ -50,7 +50,6 @@
 			width: 250px;
 		}
 		&__link {
-			color: #000;
 			font-weight: bold;
 			&:hover {
 				color: #000;
@@ -74,17 +73,36 @@
 
 	.header {
 		padding: 0 25px 0 25px;
+
 		&__navigation {
 			&-list {
 				display: none;
 			}
 		}
+        &__title {
+            a {
+                svg {
+                    width: 150px;
+                }
+            }
+        }
 	}
+
+    .promo {
+        padding: 200px 0 0 0;
+    }
+
+    .btn {
+        &:hover {
+            background-color: $main-color;
+            color: #fff;
+        }
+    }
 
 	.modal {
 		&__content {
 			width: 80%;
-			height: 45%;
+			height: 60%;
 		  }
 		  &__title {
 			font-size: 24px;
@@ -117,6 +135,11 @@
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
+    }
+
+    .header {
+        width: 90%;
+        height: 80px;
     }
 	
     .title {
@@ -231,8 +254,6 @@
 	}
 
     .promo {
-		background: linear-gradient(45deg, #000  65%, #4fff09 35%) no-repeat 37%/cover;
-        padding: 240px 0 0 0;
         &__btns {
             margin-top: 30px;
         }

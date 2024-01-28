@@ -51,3 +51,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	  }, 300);
 	}
 });
+
+function copyEmail() {
+    var email = document.querySelector('.promo__email-text a').textContent;
+    var tempInput = document.createElement("input");
+    document.body.appendChild(tempInput);
+    tempInput.value = email;
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    // Показать сообщение
+    var copyMessage = document.getElementById("copy-message");
+    copyMessage.textContent = "email copied";
+    setTimeout(function() { copyMessage.textContent = ""; }, 1500);
+}

@@ -58,21 +58,21 @@
             background-color: #232323;
             border-radius: 10px;
             transition: transform .2s ease;
-            width: 120px;
             margin: 0 10px 0 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             a {
-                padding: 10px 0 10px 0;
                 cursor: url('../../img/cursor/cursor-pointer.png'), pointer !important;
+                display: flex;
+                width: 100px;
+                height: 30px;
+                align-items: center;
+                justify-content: center;
                 color: #fff;
                 &:hover {
                     text-decoration: none;
                 }
-			}
-            &:hover {
-				transform: scale(1.05);
 			}
 		}
         
