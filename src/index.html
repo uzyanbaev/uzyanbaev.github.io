@@ -47,10 +47,10 @@
             </div>
             <nav>
                 <ul class="menu__list">
-					<li class="menu__link"><a href="#experience">EDUCATION</a></li>
-					<li class="menu__link"><a href="#portfolio">PROJECTS</a></li>
+					<li class="menu__link"><a id="education-menu" href="#experience">Education</a></li>
+					<li class="menu__link"><a id="projects-menu" href="#portfolio">Projects</a></li>
 					<li class="menu__link menu__link_btn">
-						<button class="modal-trigger menu__link_btn-item btn" data-modal-target="modal">About me</button>
+						<button id="about_me-menu" class="modal-trigger menu__link_btn-item btn" data-modal-target="modal">About me</button>
 					</li>
 					<li class="menu__social">
 						<a href="https://github.com/uzyanbaev" class="sidepanel__link">
@@ -81,8 +81,8 @@
 	  <div class="modal__overlay" data-modal-close="true"></div>
 	  <div class="modal__content">
 		<button class="modal__close-btn" data-modal-close="true">×</button>
-		<h2 class="modal__title">About me</h2>
-		<p class="modal__text">
+		<h2 id="about_me" class="modal__title">About me</h2>
+		<p id="about_me-text" class="modal__text">
             Hello! My name is Radmir Uzyanbaev. I live in Russia, and I'm 16 years old. Currently, I am a 10th-grade student with a keen interest in computers. I have hands-on experience in assembling computers and setting up Windows, and I find programming fascinating. Currently, I am particularly interested in Front-end development, and I also have a bit of knowledge in Python, C#, and 1C
 		</p>
 	  </div>
@@ -103,22 +103,29 @@
 
         <nav class="header__navigation"> 
             <ul class="header__navigation-list">
-                <li class="header__navigation-item"><a href="#experience">EDUCATION</a></li>
-                <li class="header__navigation-item"><a href="#portfolio">PROJECTS</a></li>
+                <li class="header__navigation-item"><a id="education-nav" href="#experience">Education</a></li>
+                <li class="header__navigation-item"><a id="projects-nav" href="#portfolio">Projects</a></li>
                 <li class="header__navigation-item">
-                    <button class="modal-trigger btn" data-modal-target="modal">About me</button>
+                    <button id="about_me-nav" class="modal-trigger btn" data-modal-target="modal">About me</button>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <div class="languages" id="languageSelector">
+        <div class="languages__wrapper">
+            <img class="languages__item-1" src="img/languages/russian.png" alt="Russian flag" onclick="changeLanguage('ru')">
+            <img class="languages__item-3" src="img/languages/english.png" alt="Reset language" onclick="resetLanguage()">
+        </div>
+    </div>
+
     <section class="promo">
         <div class="container">
             <div class="promo__main">
-                <div class="title title_fz23 promo__subtitle"><span>My name is </span>Radmir Uzyanbaev</div>
-                <h1 class="title title_fz58 promo__title">I am a Frontend - developer</h1>
+                <div id="my_name" class="title title_fz23 promo__subtitle">My name Radmir Uzyanbaev</div>
+                <h1 id="my_info" class="title title_fz58 promo__title">I am a Frontend - developer</h1>
                 <div class="promo__btns">
-                    <a href="#portfolio" class="promo__link btn">Portfolio</a>
+                    <a id="portfolio" href="#portfolio" class="promo__link btn">Portfolio</a>
                 </div>
                 <div class="promo__email">
                     
@@ -132,7 +139,7 @@
                             </div>
                             <a href="malito: info@uzyanbaev-dev.ru">info@uzyanbaev-dev.ru</a>
                         </div>
-                        <button class="promo__email-btn btn" onclick="copyEmail()">copy</button>
+                        <button id="copy" class="promo__email-btn btn" onclick="copyEmail()">copy</button>
                         <div id="copy-message" class="promo__email-copy"></div>
                     </div>
                 </div>
@@ -142,32 +149,32 @@
 
 	<section id="experience" class="experience">
 		<div class="container">
-			<h2 class="title title_fz46 experience-subtitle">Education & Skills</h2>
+			<h2 id="education_skills" class="title title_fz46 experience-subtitle">Education & Skills</h2>
 			<div class="divider"></div>
 
 			<div class="experience__wrapper">
 				<div class="experience__column">
-					<h3 class="title title_fz30 experience__column-title">Education</h3>
+					<h3 id="education" class="title title_fz30 experience__column-title">Education</h3>
 					<ul>
 						<li>
 							<div class="experience__item">
 								<div class="experience__item-head">
 									<div class="experience__item-icon"></div>
-									<h4 class="title title_fz30">School</h4>
-									<div class="experience__item-location">Sibay, 8th school</div>
+									<h4 id="school" class="title title_fz30">School</h4>
+									<div id="school_info" class="experience__item-location">Sibay, 8th school</div>
 								</div>
 							</div>
 							<div class="experience__item">
 								<div class="experience__item-head">
 									<div class="experience__item-icon"></div>
-									<h4 class="title title_fz30">Courses</h4>
-									<div class="experience__item-location">Frontend development courses</div>
+									<h4 id="courses" class="title title_fz30">Courses</h4>
+									<div id="courses_info" class="experience__item-location">Frontend development courses</div>
 								</div>
 							</div>
 							<div class="experience__item">
 								<div class="experience__item-head">
 									<div class="experience__item-icon"></div>
-									<h4 class="title title_fz30">University</h4>
+									<h4 id="university" class="title title_fz30">University</h4>
 									<div class="experience__item-location">-</div>
 								</div>
 							</div>
@@ -176,7 +183,7 @@
 				</div>
 
 				<div class="experience__column">
-					<h3 class="title title_fz30 experience__column-title">Skills</h3>
+					<h3 id="skills" class="title title_fz30 experience__column-title">Skills</h3>
 					<ul>
 						<li>
 							<div class="experience__item">
@@ -235,20 +242,20 @@
 
 	<section id="portfolio" class="portfolio">
 		<div class="container">
-			<h2 class="title title_fz46 portfolio__subtitle">My projects</h2>
+			<h2 id="my_project" class="title title_fz46 portfolio__subtitle">My projects</h2>
 			<div class="divider"></div>
 
 			<section class="projects">
                 <div class="project">
-					<h2 class="project__title">Morning Bird</h2>
+					<h2 class="project__title title_fz24">Morning Bird</h2>
 					<img class="project__image" src="https://github.com/TheQuintpl/Morning-Bird/blob/main/morning-bird.gif?raw=true" alt="my project: Morning Bird">
-					<p class="project__description">A project created in collaboration with my friends
-					<br><br>
-                    Creation Date: 01.11.2023</p>
+					<p id="morningbird-descr" class="project__description">A project created in collaboration with my friends
+                    <p>Creation Date: 01.11.2023</p>
+
 
 					<div class="project__links">
 						<div class="project__links-item">
-							<a href="https://github.com/TheQuintpl/Morning-Bird/releases/download/v1.0.0/Morning.Bird.apk" target="_blank">Download</a>
+							<a href="https://github.com/TheQuintpl/Morning-Bird/releases/download/v1.0.0/Morning.Bird.apk" target="_blank">Demo</a>
 						</div>
 						<div class="project__links-item">
 							<a href="https://github.com/TheQuintpl/Morning-Bird" target="_blank">Code</a>
@@ -263,14 +270,14 @@
 				</div>
 
 				<div class="project">
-					<h2 class="project__title">SkillyLume</h2>
+					<h2 class="project__title title_fz24">SkillyLume</h2>
 					<img class="project__image" src="img/works/skillylume.png" alt="My project: SkillyLume">
-					<p class="project__description">My personal project implemented in the 10th grade as part of the individual project lesson
-					<br><br>Creation Date: 26.10.2023</p>
+					<p id="skillylume-descr" class="project__description">My personal project implemented in the 10th grade as part of the individual project lesson</p>
+                    <p>Creation Date: 26.10.2023</p>
 
 					<div class="project__links">
 						<div class="project__links-item">
-							<a href="https://skillylume.ru" target="_blank">View</a>
+							<a href="https://skillylume.ru" target="_blank">Demo</a>
 						</div>
 						<div class="project__links-item">
 							<a href="https://github.com/SkillyLume/skillylume.github.io" target="_blank">Code</a>
@@ -288,14 +295,14 @@
 				</div>
 
 				<div class="project">
-					<h2 class="project__title">RunSmart</h2>
+					<h2 class="project__title title_fz24">RunSmart</h2>
 					<img class="project__image" src="img/works/runsmart.png" alt="My project: RunSmart">
-					<p class="project__description">The latest project developed within the 'Web Developer' course
-					<br><br>Creation Date: 01.07.2023</p>
+					<p id="runsmart-descr" class="project__description">The latest project developed within the «Web Developer» course</p>
+                    <p>Creation Date: 01.07.2023</p>
 
 					<div class="project__links">
 						<div class="project__links-item">
-							<a href="https://uzyanbaev.github.io/runsmart" target="_blank">View</a>
+							<a href="https://uzyanbaev.github.io/runsmart" target="_blank">Demo</a>
 						</div>
 						<div class="project__links-item">
 							<a href="https://github.com/uzyanbaev/runsmart" target="_blank">Code</a>
@@ -316,14 +323,14 @@
 				</div>
 		
 				<div class="project">
-					<h2 class="project__title">Uber</h2>
+					<h2 class="project__title title_fz24">Uber</h2>
 					<img class="project__image" src="img/works/uber.png" alt="My project: Uber">
-					<p class="project__description">The second project developed within the 'Web Developer' course
-					<br><br>Creation Date: 28.06.2023</p>
+					<p id="uber-descr" class="project__description">The second project developed within the «Web Developer» course</p>
+                    <p>Creation Date: 28.06.2023</p>
 
 					<div class="project__links">
 						<div class="project__links-item">
-							<a href="https://uzyanbaev.github.io/uber777" target="_blank">View</a>
+							<a href="https://uzyanbaev.github.io/uber777" target="_blank">Demo</a>
 						</div>
 						<div class="project__links-item">
 							<a href="https://github.com/uzyanbaev/uber777" target="_blank">Code</a>
@@ -340,14 +347,14 @@
 				</div>
 
 				<div class="project">
-					<h2 class="project__title">Wordpress</h2>
+					<h2 class="project__title ">Wordpress</h2>
 					<img class="project__image" src="img/works/wordpress.png" alt="My project: Wordpress">
-					<p class="project__description">The first project developed within the 'Web Developer' course
-					<br><br>Creation Date: 25.06.2023</p>
+					<p id="wordpress-descr" class="project__description">The first project developed within the «Web Developer» course</p>
+                    <p>Creation Date: 25.06.2023</p>
 
 					<div class="project__links">
 						<div class="project__links-item">
-							<a href="https://uzyanbaev.github.io/wordpress/" target="_blank">View</a>
+							<a href="https://uzyanbaev.github.io/wordpress/" target="_blank">Demo</a>
 						</div>
 						<div class="project__links-item">
 							<a href="https://github.com/uzyanbaev/wordpress" target="_blank">Code</a>

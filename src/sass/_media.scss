@@ -19,6 +19,11 @@
 		}
 	}
 
+    .languages {
+        top: 20%;
+        right: 2.8%;
+    }
+
 	.hamburger {
 		display: flex;
 		margin-right: 5%;
@@ -127,6 +132,7 @@
     }
 
 	.projects {
+        margin-top: 25px;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
 	}
 }
@@ -137,30 +143,39 @@
         max-width: 540px;
     }
 
+    .title {
+        &_fz23 {
+            font-size: 18px;
+        }
+        &_fz30 {
+            font-size: 24px;
+        }
+        &_fz46 {
+            font-size: 36px;
+        }
+        &_fz58 {
+            font-size: 48px;
+        }
+    }
+
     .header {
         width: 90%;
         height: 80px;
     }
-	
-    .title {
-		&_fz58 {
-			font-size: 52px;
-			line-height: 52px;
-		}
-		&_fz46 {
-			font-size: 32px;
-		}
-		&_fz30 {
-			font-size: 26px;
-		}
-		&_fz23 {
-			font-size: 16px;
-		}
+
+    .languages {
+        width: 100px;
+        height: 50px;
+        top: 18%;
+        right: 5.4%;
+        img {
+            width: 32px;
+        }
     }
-	
+
     .promo {
         &__title {
-            width: 310px;
+            width: 400px;
         }
 		&__subtitle {
 			@include before_circle;
@@ -206,7 +221,6 @@
     }
 
     .project {
-        min-height: 600px;
         &__description {
             min-height: 0px;
         }
@@ -221,27 +235,25 @@
     }
 
     .title {
-		&_fz58 {
-			font-size: 48px;
-			line-height: 52px;
-		}
-		&_fz46 {
-			font-size: 32px;
-		}
-		&_fz30 {
-			font-size: 24px;
-		}
-		&_fz23 {
-			font-size: 16px;
-		}
+        &_fz23 {
+            font-size: 16px;
+        }
+        &_fz30 {
+            font-size: 22px;
+        }
+        &_fz46 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &_fz58 {
+            font-size: 38px;
+            line-height: 44px;
+        }
     }
 
 	.header {
 		justify-content: left;
 		padding: 0 5px 0 5px;
-		&__title {
-			font-size: 20px;
-		}
 		&__navigation-title {
 			svg {
 				width: 230px;
@@ -254,6 +266,9 @@
 	}
 
     .promo {
+        &__title {
+            width: 300px;
+        }
         &__btns {
             margin-top: 30px;
         }
@@ -261,7 +276,7 @@
 
     .experience {
         &__wrapper {
-            padding: 40px 5px 0 5px;
+            padding: 20px 5px 0 5px;
         }
         &__item-body {
             font-size: 14px;
@@ -274,18 +289,13 @@
     }
 
     .project {
-        min-height: 430px;
         &__image {
             max-width: 250px;
             
         }
-        &__description {
-            font-size: 12px;
-        }
         &__links-item {
             width: 100px;
             height: 30px;
-            font-size: 12px;
         }
         &__languages {
             bottom: 40px;

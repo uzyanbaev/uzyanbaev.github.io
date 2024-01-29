@@ -1,0 +1,16 @@
+.languages {
+    position: absolute;
+    top: 14%;
+    right: 12.7%;
+    z-index: 4;
+    background-color: $dark-color;
+    border-radius: 15px;
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        cursor: pointer;
+    }
+}
