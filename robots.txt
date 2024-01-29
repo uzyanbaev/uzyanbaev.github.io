@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /wordpress/
+Disallow: /uber777/
+Disallow: /runsmart/
+
+Sitemap: https://uzyanbaev-dev.ru/sitemap.xml
