@@ -239,7 +239,7 @@
             font-size: 16px;
         }
         &_fz30 {
-            font-size: 22px;
+            font-size: 24px;
         }
         &_fz46 {
             font-size: 32px;
@@ -299,13 +299,9 @@
         }
         &__languages {
             bottom: 40px;
-            &-item {
-                font-size: 12px;
-            }
         }
         &__info {
             min-width: 90px;
-            font-size: 12px;
         }
     }
 }
