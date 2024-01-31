@@ -87,14 +87,25 @@
             margin-bottom: 5px;
         }
     }
-	&__info {
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+	&__tag {
 		background-color: $main-project;
 		color: #8b8b8b;
 		border-radius: 15px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 30px;
+        padding: 5px;
+        width: 70%;
+		font-size: 14px;
+        margin-right: 5px;
+    }
+    &__date {
+        background-color: $main-project;
+		color: #8b8b8b;
+		border-radius: 15px;
+        padding: 5px;
+        width: 30%;
 		font-size: 14px;
     }
 }
