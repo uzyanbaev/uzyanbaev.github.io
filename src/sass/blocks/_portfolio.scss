@@ -73,7 +73,9 @@
 	}
     &__languages {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        overflow-y: auto;
         margin-bottom: 10px;
         margin-top: 10px;
         &-item {
