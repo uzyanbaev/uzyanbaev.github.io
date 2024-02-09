@@ -64,7 +64,6 @@
 			text-decoration: none;
 			position: relative;
             transition: transform 0.3s ease;
-            cursor: url('../../img/cursor/cursor-pointer.png'), pointer !important;
 			&:hover {
 				color: $main-color;
                 transform: translateY(-3px);

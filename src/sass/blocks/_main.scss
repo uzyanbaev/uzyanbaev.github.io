@@ -1,4 +1,4 @@
-.promo {
+.main {
     min-height: 100vh;
     position: relative;
     padding: 300px 0 0 0;
@@ -31,15 +31,16 @@
 
         }
         &-btn {
-            width: 120px;
-            padding: 5px 10px;
+            margin-top: 5px;
+            width: 110px;
+            padding: 5px;
             border-radius: 5px;
             font-size: 14px;
         }
-        &-copy {
-            color: #4fff09;
+        &-copied {
+            color: $main-color;
             font-weight: 700;
-            font-size: 16px;
+            font-size: 14px;
         }
 
     }

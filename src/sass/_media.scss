@@ -11,7 +11,7 @@
 
 	.header {
 		padding: 0 40px 0 40px;
-		width: 95%;
+		width: 98%;
 		&__navigation {
 			&-list {
 				display: none;
@@ -29,7 +29,7 @@
 		margin-right: 5%;
 	}
 
-	.promo {
+	.main {
 		&__title {
 			width: 535px;
 			margin-top: 10px;
@@ -37,14 +37,14 @@
 		&__subtitle {
 			@include before_circle;
 			&:before {
-				content: "";
-				position: absolute;
-				z-index: -1;
-				top: -55%;
-				left: -3px;
-				width: 140px;
-				height: 50px;
-				border-radius: 10px;
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: -55%;
+                left: -3px;
+                width: 110px;
+                height: 50px;
+                border-radius: 10px;
 			}
 		}
 		&__btns {
@@ -93,7 +93,7 @@
         }
 	}
 
-    .promo {
+    .main {
         padding: 200px 0 0 0;
     }
 
@@ -159,7 +159,7 @@
     }
 
     .header {
-        width: 90%;
+        width: 95%;
         height: 80px;
     }
 
@@ -173,7 +173,7 @@
         }
     }
 
-    .promo {
+    .main {
         &__title {
             width: 400px;
         }
@@ -185,7 +185,7 @@
 				z-index: -1;
 				top: -25%;
 				left: -3px;
-				width: 100px;
+				width: 88px;
 				height: 35px;
 				border-radius: 10px;
 			}
@@ -207,6 +207,14 @@
 		}
     }
 
+    .blur {
+        width: 400px;
+        height: 400px;
+        background-color: #404792;
+        filter: blur(250px);
+        right: 5%;
+    }
+
     .experience {
         padding-top: 40px;
         &__wrapper {
@@ -218,6 +226,8 @@
 
     .projects {
         grid-template-columns: repeat(1, minmax(100%, 1fr));
+        box-shadow: none;
+
     }
 
     .project {
@@ -265,18 +275,39 @@
 		margin-right: -3%;
 	}
 
-    .promo {
+    .main {
         &__title {
             width: 300px;
         }
         &__btns {
             margin-top: 30px;
         }
+        &__subtitle {
+			@include before_circle;
+			&:before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				top: -25%;
+				left: -3px;
+				width: 80px;
+				height: 35px;
+				border-radius: 10px;
+			}
+		}
+    }
+
+    .blur {
+        width: 200px;
+        height: 450px;
+        background-color: #404792;
+        filter: blur(180px);
+        right: 5%;
     }
 
     .experience {
         &__wrapper {
-            padding: 20px 5px 0 5px;
+            padding: 40px 5px 0 5px;
         }
         &__item-body {
             font-size: 14px;

@@ -7,7 +7,7 @@
     <title>Radmir Uzyanbaev - Developer Portfolio</title>
     <meta name="title" content="Radmir Uzyanbaev">
     <meta name="description" content="Welcome to the portfolio of Radmir Uzyanbaev, a Developer from Russia. Explore my diverse projects, skills, and educational journey in the tech industry.">
-	<meta name="keywords" content="Радмир Узянбаев, Радмир, Узянбаев, Radmir Uzyanbaev, Radmir, Uzyanbaev, Uzyanbaev, Портфолио, Портфолио веб-разработчика, Портфолио фронтенд-разработчика, Portfolio, Portfolio web-developer, Portfolio frontend, Uzyanbaev portfolio, Radmir portfolio">
+	<meta name="keywords" content="Радмир Узянбаев, Радмир, Узянбаев, Radmir Uzyanbaev, Radmir, Uzyanbaev, Uzyanbaev, Портфолио, Портфолио веб-разработчика, Портфолио фронтенд-разработчика, Portfolio, Portfolio web-developer, Portfolio frontend">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
@@ -16,7 +16,6 @@
 	<link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#00a300">
 	<meta name="theme-color" content="#ffffff">
-    
     <meta name="yandex-verification" content="0e4158e7d37b0483" />
     <meta name="google-site-verification" content="MAbn9sPpvXX49_sqE073w_FQlKLjZlLiFdmf0HQbjLo" />
 
@@ -108,7 +107,7 @@
 
         <nav class="header__navigation"> 
             <ul class="header__navigation-list">
-                <li class="header__navigation-item"><a id="education-nav" href="#experience">Education</a></li>
+                <li class="header__navigation-item"><a id="education-nav" href="/#experience">Education</a></li>
                 <li class="header__navigation-item"><a id="projects-nav" href="projects.html">Projects</a></li>
                 <li class="header__navigation-item">
                     <button id="about_me-nav" class="modal-trigger btn" data-modal-target="modal">About me</button>
@@ -124,152 +123,174 @@
         </div>
     </div>
 
-    <section class="main">
-        <div class="container">
-            <div class="main__main">
-                <div id="my_name" class="title title_fz23 main__subtitle">My name Radmir Uzyanbaev</div>
-                <h1 id="my_info" class="title title_fz58 main__title">I am a developer</h1>
-                <div class="main__btns">
-                    <a id="portfolio-link" href="projects.html" class="main__link btn">Portfolio</a>
-                </div>
-                <div class="main__email">
-                    
-                    <div class="main__email-wrapper">
-                        <div class="main__email-text">
-                            <div class="main__email-icon">
-                                <svg height="35" width="35" viewBox="0 0 24 24" fill="#3941a2">
-                                    <path d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-                                  </svg>                 
-                            </div>
-                            <a href="malito:info@uzyanbaev-dev.ru">info@uzyanbaev-dev.ru</a>
-                        </div>
-                        <button id="copy" class="main__email-btn btn" onclick="copyEmail()">copy</button>
-                        <div id="copy-message" class="main__email-copied"></div>
-                    </div>
-                </div>
-                <div class="blur"></div>
-            </div>
-        </div>
-    </section>
-
-	<section id="experience" class="experience">
+	<section id="portfolio" class="portfolio">
 		<div class="container">
-			<h2 id="education_skills" class="title title_fz46 experience-subtitle">Education & Skills</h2>
+			<h2 id="my_project" class="title title_fz46 portfolio__subtitle">My projects</h2>
 			<div class="divider"></div>
 
-			<div class="experience__wrapper">
-				<div class="experience__column">
-					<h3 id="education" class="title title_fz30 experience__column-title">Education</h3>
-					<ul>
-						<li>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 id="school" class="title title_fz30">School</h4>
-                                        <div id="school_info" class="experience__item-location">Sibay, 8th school</div>
-                                    </div>
-								</div>
-							</div>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 id="courses" class="title title_fz30">Courses</h4>
-                                        <div id="courses_info" class="experience__item-location">Various development courses</div>
-                                    </div>
-								</div>
-							</div>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 id="university" class="title title_fz30">University</h4>
-                                        <div id="university_info" class="experience__item-location">I'm in the 10th grade :&#41;</div>
-                                    </div>
-								</div>
-							</div>
-						</li>
-					</ul>
+			<section class="projects">
+                <div class="project">
+					<h3 class="project__title title_fz30">Cyberpunk 2077</h3>
+					<img class="project__image" src="img/works/cyberpunk.png" alt="my project: Cyberpunk 2077">
+					<p id="cyberpunk2077-descr" class="project__description">Website developed using the figma layout</p>
+
+
+					<div class="project__links">
+						<div class="project__links-item">
+							<a href="https://uzyanbaev-dev.ru/cyberpunk" target="_blank">Demo</a>
+						</div>
+						<div class="project__links-item">
+							<a href="https://github.com/uzyanbaev/cyberpunk" target="_blank">Code</a>
+						</div>
+					</div>
+                    <div class="project__languages">
+                        <div class="project__languages-item">html</div>
+                        <div class="project__languages-item">scss</div>
+                        <div class="project__languages-item">not adaptive</div>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__tag">#website-from-figma</div>
+                        <div class="project__date">31.01.2024</div>
+                    </div>
 				</div>
 
-				<div class="experience__column">
-					<h3 id="skills" class="title title_fz30 experience__column-title">Skills</h3>
-					<ul>
-						<li>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 class="title title_fz30">Frontend</h4>
-                                        <div class="experience__item-location">HTML, CSS, SCSS, SASS, Bootstrap, Gulp, Bem, JavaScript, JQuery</div>
-                                    </div>
-								</div>
-							</div>
-						</li>
+                <div class="project">
+					<h3 class="project__title title_fz30">Morning Bird</h3>
+					<img class="project__image" src="https://github.com/VipeLoad/Morning-Bird/raw/main/morning-bird.gif" alt="my project: Morning Bird">
+					<p id="morningbird-descr" class="project__description">It is an addictive arcade game developed using Unity in which player control a bird while passing challenges to score high scores</p>
 
-						<li>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 class="title title_fz30">Backend</h4>
-                                        <div class="experience__item-location">-</div>
-                                    </div>
-								</div>
-							</div>
-						</li>
 
-                        <li>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 class="title title_fz30">MobileDev</h4>
-                                        <div class="experience__item-location">-</div>
-                                    </div>
-								</div>
-							</div>
-						</li>
+					<div class="project__links">
+						<div class="project__links-item">
+							<a href="https://github.com/TheQuintpl/Morning-Bird/releases/download/v1.0.0/Morning.Bird.apk" target="_blank">Demo</a>
+						</div>
+						<div class="project__links-item">
+							<a href="https://github.com/TheQuintpl/Morning-Bird" target="_blank">Code</a>
+						</div>
+					</div>
+                    <div class="project__languages">
+                        <div class="project__languages-item">unity</div>
+                        <div class="project__languages-item">c#</div>
+                    </div>
 
-						<li>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 class="title title_fz30">GameDev</h4>
-                                        <div class="experience__item-location">Unity, Basic C#</div>
-                                    </div>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="experience__item">
-								<div class="experience__item-head">
-									<div class="experience__item-icon"></div>
-                                    <div class="experience__item-wrappaer">
-                                        <h4 class="title title_fz30">Other</h4>
-                                        <div class="experience__item-location">Git, Basic Python</div>
-                                    </div>
-								</div>
-							</div>
-						</li>
-					</ul>
+                    <div class="project__info">
+                        <div class="project__tag">#collaboration-project</div>
+                        <div class="project__date">01.11.2023</div>
+                    </div>
 				</div>
-			</div>
+
+				<div class="project">
+					<h3 class="project__title title_fz30">SkillyLume</h3>
+					<img class="project__image" src="img/works/skillylume.png" alt="My project: SkillyLume">
+					<p id="skillylume-descr" class="project__description">This website was created exclusively as an individual project in the 10th grade and it will help you prepare for the OGE in computer science (Russian exam for informatics)</p>
+
+					<div class="project__links">
+						<div class="project__links-item">
+							<a href="https://skillylume.ru" target="_blank">Demo</a>
+						</div>
+						<div class="project__links-item">
+							<a href="https://github.com/SkillyLume/skillylume.github.io" target="_blank">Code</a>
+						</div>
+					</div>
+                    <div class="project__languages">
+                        <div class="project__languages-item">html</div>
+                        <div class="project__languages-item">scss</div>
+                        <div class="project__languages-item">adaptive</div>
+                        <div class="project__languages-item">js</div>
+                        <div class="project__languages-item">gulp</div>
+                        <div class="project__languages-item">git</div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tag">#my-project</div>
+                        <div class="project__date">26.10.2023</div>
+                    </div>
+				</div>
+
+				<div class="project">
+					<h3 class="project__title title_fz30">RunSmart</h3>
+					<img class="project__image" src="img/works/runsmart.png" alt="My project: RunSmart">
+					<p id="runsmart-descr" class="project__description">The latest website developed within the «Web Developer» course</p>
+
+					<div class="project__links">
+						<div class="project__links-item">
+							<a href="https://uzyanbaev-dev.ru/runsmart" target="_blank">Demo</a>
+						</div>
+						<div class="project__links-item">
+							<a href="https://github.com/uzyanbaev/runsmart" target="_blank">Code</a>
+						</div>
+					</div>
+                    <div class="project__languages">
+                        <div class="project__languages-item">html</div>
+                        <div class="project__languages-item">scss</div>
+                        <div class="project__languages-item">adaptive</div>
+                        <div class="project__languages-item">js</div>
+                        <div class="project__languages-item">gulp</div>
+                        <div class="project__languages-item">git</div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tag">#course-project</div>
+                        <div class="project__date">01.07.2023</div>
+                    </div>
+
+				</div>
+		
+				<div class="project">
+					<h3 class="project__title title_fz30">Uber</h3>
+					<img class="project__image" src="img/works/uber.png" alt="My project: Uber">
+					<p id="uber-descr" class="project__description">The second website developed within the «Web Developer» course</p>
+
+					<div class="project__links">
+						<div class="project__links-item">
+							<a href="https://uzyanbaev-dev.ru/uber777" target="_blank">Demo</a>
+						</div>
+						<div class="project__links-item">
+							<a href="https://github.com/uzyanbaev/uber777" target="_blank">Code</a>
+						</div>
+					</div>
+                    <div class="project__languages">
+                        <div class="project__languages-item">html</div>
+                        <div class="project__languages-item">css</div>
+                        <div class="project__languages-item">adaptive</div>
+                        <div class="project__languages-item">js</div>
+                        <div class="project__languages-item bootstrap">bootstrap</div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tag">#course-project</div>
+                        <div class="project__date">28.06.2023</div>
+                    </div>
+				</div>
+
+				<div class="project">
+					<h3 class="project__title title_fz30">Wordpress</h3>
+					<img class="project__image" src="img/works/wordpress.png" alt="My project: Wordpress">
+					<p id="wordpress-descr" class="project__description">The first website developed within the «Web Developer» course</p>
+
+					<div class="project__links">
+						<div class="project__links-item">
+							<a href="https://uzyanbaev-dev.ru/wordpress/" target="_blank">Demo</a>
+						</div>
+						<div class="project__links-item">
+							<a href="https://github.com/uzyanbaev/wordpress" target="_blank">Code</a>
+						</div>
+					</div>
+                    <div class="project__languages">
+                        <div class="project__languages-item">html</div>
+                        <div class="project__languages-item">css</div>
+                        <div class="project__languages-item">not adaptive</div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tag">#course-project</div>
+                        <div class="project__date">25.06.2023</div>
+                    </div>
+				</div>
+			</section>
 		</div>
 	</section>
 
-    <footer class="footer">
-        <div class="footer__text">@Radmir Uzyanbaev</div>
-    </footer>
-
-	<script src="js/script.js"></script>
-
-	<!--<div class="snowContainer">
-		<div id="snow"></div>
-	</div>-->
+    <script src="js/script.js"></script>
 </body>
 </html>

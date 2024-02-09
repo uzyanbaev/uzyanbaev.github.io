@@ -25,16 +25,29 @@
 body {
 	background-color: $background;
 	top: 0 !important;
-    cursor: url('../../src/img/cursor/cursor.png'), default;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+.blur {
+    width: 450px;
+    height: 450px;
+    background-color: #404792;
+    border-radius: 100%;
+    position: absolute;
+    filter: blur(280px);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30%;
+    pointer-events: none;
+}
+
+
 @import 'blocks/header';
 @import 'blocks/languages';
-@import 'blocks/promo';
+@import 'blocks/main';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
@@ -43,4 +56,5 @@ html {
 @import 'blocks/portfolio';
 @import 'blocks/snow';
 @import 'blocks/modal';
+@import 'blocks/footer';
 @import 'media';

@@ -1,5 +1,5 @@
 .experience {
-	border-top: 2px solid #181818;
+	border-top: 3px solid $dark-color;
 	min-height: 750px;
 	padding: 40px 0 40px 0;
 	&-title {
@@ -67,6 +67,12 @@
 			top: 68px;
 			background-color: #ffffff;
 		}
+        &-wrappaer {
+            background-color: $dark-color;
+            border-radius: 15px;
+            padding: 10px;
+
+        }
 		&-head {
 			position: relative;
 			padding: 45px 0 0 100px;

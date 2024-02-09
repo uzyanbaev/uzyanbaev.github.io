@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function copyEmail() {
-    var email = document.querySelector('.promo__email-text a').textContent;
+    var email = document.querySelector('.main__email-text a').textContent;
     var tempInput = document.createElement("input");
     document.body.appendChild(tempInput);
     tempInput.value = email;
