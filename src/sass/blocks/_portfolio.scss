@@ -24,7 +24,8 @@
     &__title {
         background-color: $block-color;
         border-radius: 10px;
-        padding: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
     }
 	&__image {
 		width: 100%;
@@ -47,16 +48,13 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            margin: 0 10px 0 10px;
-            width: 40%;
-            height: 30px;
+            margin: 0 5px 0 5px;
+            width: 30%;
+            min-height: 40px;
             color: #fff;
+            transition: all .4s;
             a {
-                padding: 0 45px 0 45px;
-                color: #fff;
-                &:hover {
-                    text-decoration: none;
-                }
+                padding: 0 30px 0 30px;
 			}
             &:hover {
                 text-decoration: none;
@@ -70,17 +68,19 @@
         flex-wrap: wrap;
         justify-content: right;
         overflow-y: auto;
-        margin-bottom: 5px;
         margin-top: 15px;
+        margin-bottom: 10px;
         &-item {
             background-color: $block-color;
-            border-radius: 15px;
-            min-width: 40px;
-            padding: 5px 10px 5px 10px;
-		    color: #909090;
+            border-radius: 10px;
+            padding: 5px 15px 5px 15px;
             margin-right: 5px;
-            margin-bottom: 5px;
-            font-weight: 700;
+            &:last-child {
+                margin-right: 0;
+            }
+            svg {
+                width: 25px;
+            }
         }
     }
     &__info {
