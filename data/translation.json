@@ -91,6 +91,9 @@
         "en": "Telegram bot where you provide your geolocation, and it sends it in text format"
     },
 
+    "my_blog": {
+        "en": "Blog"
+    },
     "blog_radmir-uzyanbaev-title": {
         "en": "Radmir Uzyanbaev | About Me"
     },
