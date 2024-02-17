@@ -1,0 +1,43 @@
+.blog {
+    &__title {
+        color: #fff;
+		text-align: center;
+    }
+    &__link {
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__img {
+        img {
+            border-radius: 15px;
+        }
+    }
+    &__item {
+        background-color: $block-bg;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+        padding: 15px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: $hover;
+        }
+        &-wrapper {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        &-title {
+            color: #fff;
+        }
+        &-subtitle {
+            color: #808080;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,24 +1,11 @@
 .experience {
-	border-top: 3px solid $dark-color;
-	min-height: 750px;
-	padding: 40px 0 40px 0;
-	&-title {
-		color: #fff;
-		text-align: center;
-		@include before_circle;
-		position: relative;
-		&:before {
-			top: -6px;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-	}
-	&-subtitle {
+    z-index: 2;
+	&__title {
 		color: #fff;
 		text-align: center;
 	}
 	&__wrapper {
-		padding: 60px 65px 0 65px;
+		padding: 0 65px 0 65px;
 		display: grid;
 		grid-template-columns: repeat(2, 425px);
 		column-gap: 135px;
@@ -68,9 +55,9 @@
 			background-color: #ffffff;
 		}
         &-wrappaer {
-            background-color: $dark-color;
-            border-radius: 15px;
-            padding: 10px;
+            background-color: $block-bg;
+            border-radius: 20px;
+            padding: 15px;
 
         }
 		&-head {
@@ -92,14 +79,12 @@
 			}
 		}
 		&-location {
-			font-size: 16px;
 			line-height: 18px;
 			margin-top: 10px;
 		}
 		&-body {
 			margin-bottom: 0;
 			line-height: 18px;
-			font-size: 16px;
 			margin-top: 10px;
 		}
 	}

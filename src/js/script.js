@@ -19,39 +19,6 @@ function toggleMenu() {
   document.body.classList.toggle('menu-open');
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-	const modalTriggers = document.querySelectorAll('.modal-trigger');
-	const modals = document.querySelectorAll('.modal');
-	const overlay = document.querySelector('.modal__overlay');
-  
-	modalTriggers.forEach(trigger => {
-	  trigger.addEventListener('click', () => {
-		const targetModal = document.getElementById(trigger.dataset.modalTarget);
-		openModal(targetModal);
-	  });
-	});
-  
-	modals.forEach(modal => {
-	  modal.addEventListener('click', (e) => {
-		if (e.target === overlay || e.target.dataset.modalClose) {
-		  closeModal(modal);
-		}
-	  });
-	});
-  
-	function openModal(modal) {
-	  modal.style.display = 'flex';
-	}
-  
-	function closeModal(modal) {
-	  modal.querySelector('.modal__content').classList.add('fade-out');
-	  setTimeout(() => {
-		modal.style.display = 'none';
-		modal.querySelector('.modal__content').classList.remove('fade-out');
-	  }, 300);
-	}
-});
-
 function copyEmail() {
     var email = document.querySelector('.main__email-text a').textContent;
     var tempInput = document.createElement("input");
@@ -73,11 +40,12 @@ function changeLanguage(id) {
             for (let key in data) {
                 let element = document.querySelector(`#${key}`);
                 if (element) {
-                    element.textContent = data[key][id];
+                    element.innerHTML = data[key][id];
                 }
             }
 
             document.body.className = id;
+            document.documentElement.lang = id;
         })
         .catch(error => console.error('Error:', error));
 }
@@ -85,3 +53,32 @@ function changeLanguage(id) {
 function resetLanguage() {
     location.reload();
 }
+
+function openPage(pageId, initial = false) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("page");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+    document.getElementById(pageId).classList.add("active");
+    if (initial) {
+        for (i = 0; i < tablinks.length; i++) {
+            if (tablinks[i].getAttribute('onclick').includes("'" + pageId + "'")) {
+                tablinks[i].classList.add("active");
+                break;
+            }
+        }
+    }
+
+    setTimeout(function () {
+        window.scrollTo(0, 0);
+    }, 300);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    openPage('main', true);
+});

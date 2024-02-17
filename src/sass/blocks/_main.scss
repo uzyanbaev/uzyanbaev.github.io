@@ -1,46 +1,60 @@
 .main {
-    min-height: 100vh;
     position: relative;
-    padding: 300px 0 0 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #1d1f33a0;
+        border-radius: 25px;
+        width: 60%;
+        padding: 50px 25px 50px 25px;
+        height: 100%;
+    }
     &__title {
         color: #fff;
         width: 535px;
         margin-top: 25px;
     }
+    &__description {
+        background-color: $block-bg;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 25px;
+        color: #fff;
+    }
     &__email {
         margin-top: 15px;
+        background: $block-bg;
+        border-radius: 10px;
+        width: 40%;
         display: flex;
+        padding: 15px; 
         &-icon {
             margin-right: 5px;
-
         }
         &-text {
             display: flex;
             align-items: center;
+            justify-content: left;
             a {
+                text-align: center;
                 text-decoration: none;
                 color: #b6b6b6;
-                cursor: url('../../img/cursor/cursor-pointer.png'), pointer !important;
             }
         }
-        &-wrapper {
-            height: 40px;
+        &-copy {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
+            align-items: center;
         }
         &-btn {
             margin-top: 5px;
             width: 110px;
             padding: 5px;
             border-radius: 5px;
-            font-size: 14px;
         }
         &-copied {
+            margin-left: 10px;
             color: $main-color;
             font-weight: 700;
-            font-size: 14px;
         }
 
     }
@@ -75,7 +89,6 @@
         width: 400px;
         height: 70px;
         border-radius: 10px;
-        font-size: 36px;
         &:hover {
             text-decoration: none;
             transform: translateY(-2px);

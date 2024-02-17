@@ -7,10 +7,10 @@
     color: white;
     display: flex;
     align-items: center;
-    height: 100px;
-    width: 75%;
+    height: 90px;
+    width: 80%;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 15px;
     z-index: 3;
 
 	&__title {
@@ -24,51 +24,5 @@
 			width: 200px;
 			height: 70px;
 		}
-	}
-  
-	&__navigation {
-		display: flex;
-		align-items: center;
-	  	&-title {
-			flex: 1;
-            a {
-            color: #fff;
-            text-decoration: none;
-                span {
-                color: $main-color;
-                }
-            }
-            svg {
-                width: 280px;
-                height: 90px;
-            }
-	    }
-  
-	  &-list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	  }
-  
-	  &-item {
-		margin-right: 20px;
-		display: inline;
-		text-decoration: none;
-		font-size: 20px;
-		font-weight: 700;
-		color: #fff;
-		a {
-            display: inline-block;
-            text-transform: uppercase;
-			color: #fff;
-			text-decoration: none;
-			position: relative;
-            transition: transform 0.3s ease;
-			&:hover {
-				color: $main-color;
-                transform: translateY(-3px);
-			}
-		}
-	  }
 	}
 }

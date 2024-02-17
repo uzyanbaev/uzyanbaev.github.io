@@ -3,6 +3,7 @@
 
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/fonts';
 
 * {
     font-family: 'Noto Sans', sans-serif;
@@ -19,7 +20,7 @@
     width: 150px;
     height: 5px;
     background-color: $main-color;
-	margin: 25px auto 0 auto;
+	margin: 25px auto 50px auto;
 }
 
 body {
@@ -27,21 +28,20 @@ body {
 	top: 0 !important;
 }
 
-html {
-    scroll-behavior: smooth;
+body::-webkit-scrollbar {
+    width: 5px;
 }
 
-.blur {
-    width: 450px;
-    height: 450px;
-    background-color: #404792;
-    border-radius: 100%;
-    position: absolute;
-    filter: blur(280px);
-    top: 50%;
-    transform: translateY(-50%);
-    right: 30%;
-    pointer-events: none;
+body::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: $dark-color;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -55,6 +55,8 @@ html {
 @import 'blocks/experience';
 @import 'blocks/portfolio';
 @import 'blocks/snow';
-@import 'blocks/modal';
+@import 'blocks/blog';
+@import 'blocks/blog-content';
+@import 'blocks/navbar';
 @import 'blocks/footer';
 @import 'media';
