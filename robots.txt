@@ -3,5 +3,7 @@ Disallow: /wordpress/
 Disallow: /uber777/
 Disallow: /runsmart/
 Disallow: /projects/
+Disallow: /projects/
+Disallow: /blog/
 
 Sitemap: https://uzyanbaev-dev.ru/sitemap.xml
