@@ -2,6 +2,15 @@
     .sidepanel {
         display: none;
     }
+    .main {
+        &__social {
+            display: flex;
+        }
+        &__email {
+            margin-top: 15px;
+        }
+    }
+    
 }
 
 @media (max-width: 1200px) {

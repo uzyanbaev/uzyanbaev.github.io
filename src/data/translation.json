@@ -1,109 +1,144 @@
 {
+    "title": {
+        "en": "Radmir Uzyanbaev: Portfolio Radmir Uzyanbaev",
+        "ru": "Radmir Uzyanbaev: Портфолио Радмира Узянбаева"
+    },
+    "description": {
+        "en": "Welcome to the portfolio of Radmir Uzyanbaev! On this site you can find full information about Radmir, including his education, skills and participation in various projects.",
+        "ru": "Добро пожаловать на портфолио Радмира Узянбаева! На этом сайте вы сможете ознакомиться с полной информацией о Радмире, включая его образование, навыки и участие в разнообразных проектах."
+    },
+    
     "home_tablink": {
-        "en": "Home"
+        "en": "Home",
+        "ru": "Главная"
     },
     "experience_tablink": {
-        "en": "Experience"
+        "en": "Experience",
+        "ru": "Опыт"
     },
     "projects_tablink": {
-        "en": "Projects"
+        "en": "Projects",
+        "ru": "Проекты"
     },
     "blog_tablink": {
-        "en": "Blog"
+        "en": "Blog",
+        "ru": "Блог"
     },
 
     "about_me": {
-        "en": "Hello! My name is Radmir Uzyanbaev, I'm 16 years old, and I live in Russia. Currently, I'm in the 10th grade and have a passion for computers. I have experience in building computers, configuring Windows, and an interest in programming. Currently, I am studying Frontend development and Python. I have already completed several projects using HTML/CSS/JS and implemented several Telegram bots using Python."
+        "en": "Hello! My name is Radmir Uzyanbaev, I'm 16 years old, and I live in Russia. Currently, I'm in the 10th grade and have a passion for computers. I have experience in building computers, configuring Windows, and an interest in programming. Currently, I am studying Frontend development and Python. I have already completed several projects using HTML/CSS/JS and implemented several Telegram bots using Python.",
+        "ru": "Привет! Меня зовут Радмир Узянбаев, мне 16 лет, и я живу в России. В данный момент я учусь в 10 классе и увлекаюсь компьютерами. У меня есть опыт сборки компьютеров и настройки Windows, а также интерес к программированию. В настоящее время я изучаю Frontend разработку и Python. У меня уже есть несколько проектов на HTML/CSS/JS, а также несколько телеграм-ботов, реализованных на Python."
     },
     "education-menu": {
-        "en": "Education"
+        "en": "Education",
+        "ru": "Образование"
     },
     "projects-menu": {
-        "en": "Projects"
+        "en": "Projects",
+        "ru": "Проекты"
     },
 
     "my_name": {
-        "en": "My name is Radmir Uzyanbaev"
+        "en": "My name is Radmir Uzyanbaev",
+        "ru": "Мое имя Радмир Узянбаев"
     },
     "my_info": {
-        "en": "I am a developer"
+        "en": "I am a developer",
+        "ru": "Я разработчик"
     },
     "portfolio-link": {
-        "en": "Portfolio"
+        "en": "Portfolio",
+        "ru": "Портфолио"
     },
     "copy": {
-        "en": "Copy"
+        "en": "Copy",
+        "ru": "Копировать"
     },
 
     "education_skills": {
-        "en": "Education & Skills"
+        "en": "Education & Skills",
+        "ru": "Образование & Навыки"
     },
     "education": {
-        "en": "Education"
+        "en": "Education",
+        "ru": "Образование"
     },
     "skills": {
-        "en": "Skills"
+        "en": "Skills",
+        "ru": "Навыки"
     },
     "school": {
-        "en": "School"
+        "en": "School",
+        "ru": "Школа"
     },
     "school_info": {
-        "en": "Sibay, 8th school"
+        "en": "Sibay, 8th school",
+        "ru": "Сибай, 8-я школа"
     },
     "courses": {
-        "en": "Courses"
+        "en": "Courses",
+        "ru": "Курсы"
     },
     "courses_info": {
-        "en": "Frontend development courses"
+        "en": "Frontend development courses",
+        "ru": "Курсы по frontend-разработке"
     },
     "university": {
-        "en": "University"
+        "en": "University",
+        "ru": "Университет"
     },
     "university_info": {
-        "en": "I am in the 10th grade :)"
+        "en": "I am in the 10th grade :)",
+        "ru": "Я учусь в 10-м классе :)"
     },
 
     "my_project": {
-        "en": "My Projects"
+        "en": "My Projects",
+        "ru": "Мои проекты"
     },
     "cyberpunk2077-descr": {
-        "en": "The website is developed using the Figma layout"
+        "en": "The website is developed using the Figma layout",
+        "ru": "Сайт разработан с использованием макета figma"
     },
     "morningbird-descr": {
-        "en": "This is an exciting arcade game developed using Unity, where the player controls a bird, facing challenges to score high points"
+        "en": "This is an exciting arcade game developed using Unity, where the player controls a bird, facing challenges to score high points",
+        "ru": "Это захватывающая аркадная игра, разработанная с использованием Unity, в которой игрок управляет птицей, проходя испытания, чтобы набрать высокие баллы"
     },
     "skillylume-descr": {
-        "en": "This website was created as an individual project in the 10th grade and will help you prepare for the Informatics exam"
+        "en": "This website was created as an individual project in the 10th grade and will help you prepare for the Informatics exam",
+        "ru": "Этот сайт был создан исключительно как индивидуальный проект в 10-м классе и поможет вам подготовиться к ОГЭ по информатике"
     },
     "runsmart-descr": {
-        "en": "The latest website developed as part of the 'Web Developer' course"
+        "en": "The latest website developed as part of the 'Web Developer' course",
+        "ru": "Последний веб-сайт, разработанный в рамках курса «Веб-разработчик»"
     },
     "uber-descr": {
-        "en": "The second website developed as part of the 'Web Developer' course"
+        "en": "The second website developed as part of the 'Web Developer' course",
+        "ru": "Второй веб-сайт, разработанный в рамках курса «Веб-разработчик»"
     },
     "wordpress-descr": {
-        "en": "The first website developed as part of the 'Web Developer' course"
+        "en": "The first website developed as part of the 'Web Developer' course",
+        "ru": "Первый веб-сайт, разработанный в рамках курса «Веб-разработчик»"
     },
     "wordsecurebot-descr": {
-        "en": "Telegram bot - a filter that deletes messages added to the group's forbidden list by the administrator"
+        "en": "Telegram bot - a filter that deletes messages added to the group's forbidden list by the administrator",
+        "ru": "телеграмм-бот — фильтратор, удаляющий сообщения, которые администратор группы добавляет в запрещенные"
     },
     "geotextbot-descr": {
-        "en": "Telegram bot where you provide your geolocation, and it sends it in text format"
+        "en": "Telegram bot where you provide your geolocation, and it sends it in text format",
+        "ru": "Telegram-бот, которому вы передаете свою геолокацию, и он передает ее в текстовом формате"
     },
 
     "my_blog": {
-        "en": "Blog"
-    },
-    "blog_radmir-uzyanbaev-title": {
-        "en": "Radmir Uzyanbaev | About Me"
-    },
-    "blog_radmir-uzyanbaev-subtitle": {
-        "en": "Published on February 14, 2024 | Russian only"
+        "en": "Blog",
+        "ru": "Блог"
     },
     "blog_vipeload-creation-title": {
-        "en": "Vipeload | Creating a Developers' Community"
+        "en": "Vipeload | Creating a Developers' Community",
+        "ru": "Vipeload | Создание сообщества разработчиков"
     },
     "blog_vipeload-creation-subtitle": {
-        "en": "Published on February 14, 2024 | Russian only"
+        "en": "Published on February 14, 2024 | Russian only",
+        "ru": "Опубликовано 14 февраля 2024 г. | только на русском языке"
     }
 }

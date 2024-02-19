@@ -21,8 +21,20 @@
         margin-top: 25px;
         color: #fff;
     }
+    &__social {
+        display: none;
+        background-color: $block-bg;
+        border-radius: 10px;
+        padding: 10px;
+        a {
+            svg {
+                fill: #6168b4;
+                width: 50px;
+                height: 40px;
+            }
+        }
+    }
     &__email {
-        margin-top: 15px;
         background: $block-bg;
         border-radius: 10px;
         width: 40%;
