@@ -1,7 +1,7 @@
 {
     "title": {
-        "en": "Radmir Uzyanbaev: Portfolio Radmir Uzyanbaev",
-        "ru": "Radmir Uzyanbaev: Портфолио Радмира Узянбаева"
+        "en": "Radmir Uzyanbaev | Developer from Russia",
+        "ru": "Радмир Узянбаев | Разработчик из России"
     },
     "description": {
         "en": "Welcome to the portfolio of Radmir Uzyanbaev! On this site you can find full information about Radmir, including his education, skills and participation in various projects.",
@@ -93,32 +93,33 @@
     },
 
     "my_project": {
-        "en": "My Projects",
+        "en": "My projects",
         "ru": "Мои проекты"
     },
-    "cyberpunk2077-descr": {
-        "en": "The website is developed using the Figma layout",
-        "ru": "Сайт разработан с использованием макета figma"
+
+    "wordpress-descr": {
+        "en": "The first website developed as part of the «Web Developer» course",
+        "ru": "Первый веб-сайт, разработанный в рамках курса «Веб-разработчик»"
     },
-    "morningbird-descr": {
-        "en": "This is an exciting arcade game developed using Unity, where the player controls a bird, facing challenges to score high points",
-        "ru": "Это захватывающая аркадная игра, разработанная с использованием Unity, в которой игрок управляет птицей, проходя испытания, чтобы набрать высокие баллы"
+    "uber-descr": {
+        "en": "The second website developed as part of the «Web Developer» course",
+        "ru": "Второй веб-сайт, разработанный в рамках курса «Веб-разработчик»"
+    },
+    "runsmart-descr": {
+        "en": "The latest website developed as part of the «Web Developer» course",
+        "ru": "Последний веб-сайт, разработанный в рамках курса «Веб-разработчик»"
     },
     "skillylume-descr": {
         "en": "This website was created as an individual project in the 10th grade and will help you prepare for the Informatics exam",
         "ru": "Этот сайт был создан исключительно как индивидуальный проект в 10-м классе и поможет вам подготовиться к ОГЭ по информатике"
     },
-    "runsmart-descr": {
-        "en": "The latest website developed as part of the 'Web Developer' course",
-        "ru": "Последний веб-сайт, разработанный в рамках курса «Веб-разработчик»"
+    "morningbird-descr": {
+        "en": "This is an exciting arcade game developed using Unity, where the player controls a bird, facing challenges to score high points",
+        "ru": "Это захватывающая аркадная игра, разработанная с использованием Unity, в которой игрок управляет птицей, проходя испытания, чтобы набрать высокие баллы"
     },
-    "uber-descr": {
-        "en": "The second website developed as part of the 'Web Developer' course",
-        "ru": "Второй веб-сайт, разработанный в рамках курса «Веб-разработчик»"
-    },
-    "wordpress-descr": {
-        "en": "The first website developed as part of the 'Web Developer' course",
-        "ru": "Первый веб-сайт, разработанный в рамках курса «Веб-разработчик»"
+    "cyberpunk2077-descr": {
+        "en": "The website is developed using the Figma layout",
+        "ru": "Сайт разработан с использованием макета figma"
     },
     "wordsecurebot-descr": {
         "en": "Telegram bot - a filter that deletes messages added to the group's forbidden list by the administrator",
