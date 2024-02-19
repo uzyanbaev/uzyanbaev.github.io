@@ -39,7 +39,7 @@
 					position: absolute;
 					top: -16px;
 					left: 0; 
-					background-color: #ffffff;
+					background-color: $second-color;
 				}
 			}
 		}
@@ -48,11 +48,11 @@
 		position: relative;
 		&:before {
 			content: "";
-			height: 2px;
+			height: 3px;
 			width: 45px;
 			position: absolute;
 			top: 68px;
-			background-color: #ffffff;
+			background-color: $main-color;
 		}
         &-wrappaer {
             background-color: $block-bg;

@@ -11,7 +11,8 @@ gulp.task('server', function () {
     browserSync.init({
         server: {
             baseDir: "dist"
-        }
+        },
+        browser: "chrome"
     });
 
     gulp.watch("src/**/*.html").on('change', browserSync.reload);

@@ -51,7 +51,6 @@
             margin: 0 5px 0 5px;
             width: 30%;
             min-height: 40px;
-            color: #fff;
             transition: all .4s;
             a {
                 padding: 0 30px 0 30px;
@@ -77,9 +76,6 @@
             margin-right: 5px;
             &:last-child {
                 margin-right: 0;
-            }
-            svg {
-                width: 25px;
             }
         }
     }
