@@ -205,6 +205,8 @@
     }
 
     .project {
+        width: 95%;
+        margin: 0 auto;
         &__description {
             min-height: 0px;
         }
@@ -292,11 +294,8 @@
     }
 
     .blog {
-        &__img {
-            margin-top: 4%;
-        }
         &__item {
-            width: 100%;
+            width: 95%;
             align-items: flex-start;
 
         }
