@@ -118,8 +118,8 @@
         "ru": "Это захватывающая аркадная игра, разработанная с использованием Unity, в которой игрок управляет птицей, проходя испытания, чтобы набрать высокие баллы"
     },
     "cyberpunk2077-descr": {
-        "en": "The website is developed using the Figma layout",
-        "ru": "Сайт разработан с использованием макета figma"
+        "en": "Landing page about the game cyberpunk 2077 created using the figma layout",
+        "ru": "Сайт об игре cyberpunk 2077, созданная с использованием макета figma"
     },
     "wordsecurebot-descr": {
         "en": "Telegram bot - a filter that deletes messages added to the group's forbidden list by the administrator",

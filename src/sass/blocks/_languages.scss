@@ -12,4 +12,10 @@
     img {
         cursor: pointer;
     }
+    &__item {
+        transition: all .4s;
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
 }

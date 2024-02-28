@@ -1,8 +1,29 @@
 .portfolio {
-    	&__title {
-		color: #fff;
-		text-align: center;
-	}
+    &__title {
+        color: #fff;
+        text-align: center;
+    }
+    &__filter {
+        display: flex;
+        justify-content: left;
+        background-color: $block-bg;
+        margin: 0 auto;
+        border-radius: 25px;
+        margin-bottom: 30px;
+        padding: 15px;
+        &-dropdown {
+            padding: 5px;
+            width: 30%;
+            color: #fff;
+            background-color: $block-color;
+            border-radius: 10px;
+            border: none;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+    }
 }
 
 .projects {
@@ -58,6 +79,7 @@
             &:hover {
                 text-decoration: none;
                 background-color: $hover;
+                transform: translateY(-1.5px);
             }
 		}
         
