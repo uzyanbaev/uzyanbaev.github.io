@@ -5,6 +5,9 @@ const copyMessage = document.getElementById('copy-message');
 document.addEventListener('DOMContentLoaded', () => {
     filterDropdown.addEventListener('change', filterProjects);
 });
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
 
 function filterProjects() {
     const filterValue = filterDropdown.value;
