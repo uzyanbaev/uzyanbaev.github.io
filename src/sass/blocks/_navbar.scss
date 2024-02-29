@@ -11,16 +11,13 @@
 .page.active {
     height: auto;
     padding-top: 180px;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-
 .navbar {
-    display: flex;
-    justify-content: center;
     overflow: hidden;
     background-color: $dark-color;
     border-radius: 15px;
@@ -31,6 +28,23 @@
     transform: translateX(-50%);
     z-index: 4;
     padding: 10px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+    &__overlay {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        border-radius: 5px;
+        height: 30px;
+        backdrop-filter: blur(25px);
+        z-index: 3;
+        pointer-events: none;
+    }
 }
 
 .tablink {
@@ -65,18 +79,6 @@
     background-color: #545ba174;
 }
 
-.overlay {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 35%;
-    height: 30px;
-    backdrop-filter: blur(10px);
-    z-index: 3;
-    pointer-events: none;
-}
-
 
 @media (max-width: 1200px) {
     .navbar {
@@ -91,7 +93,7 @@
         font-size: 14px;
     }
 
-    .overlay {
+    .navbar__overlay {
         width: 80%;
     }
 }
@@ -105,7 +107,7 @@
         width: 95%;
     }
 
-    .overlay {
+    .navbar__overlay {
         width: 90%;
     }
 }
