@@ -129,13 +129,17 @@
         "en": "Telegram bot where you provide your geolocation, and it sends it in text format",
         "ru": "Telegram-бот, которому вы передаете свою геолокацию, и он передает ее в текстовом формате"
     },
+    "quizionbot-descr": {
+        "en": "Telegram bot for conducting quizzes, make your group more interesting with this bot! Answer questions of varying difficulty and get points",
+        "ru": "Телеграм-бот для проведения викторин, сделайте свою группу интереснее с помощью этого бота! Отвечайте на вопросы различной сложности и получайте баллы"
+    },
 
     "my_blog": {
         "en": "Blog",
         "ru": "Блог"
     },
     "blog_vipeload-creation-title": {
-        "en": "Vipeload | Creating a Developers' Community",
+        "en": "Vipeload | Creating a Developers Community",
         "ru": "Vipeload | Создание сообщества разработчиков"
     },
     "blog_vipeload-creation-subtitle": {
