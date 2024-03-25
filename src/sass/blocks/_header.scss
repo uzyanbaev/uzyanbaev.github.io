@@ -7,8 +7,8 @@
     color: white;
     display: flex;
     align-items: center;
-    height: 90px;
-    width: 80%;
+    height: 110px;
+    width: 78%;
     margin: 0 auto;
     border-radius: 15px;
     z-index: 3;
@@ -16,13 +16,14 @@
 	&__title {
 		order: -1;
 		margin-right: auto;
-		margin-left: 20px;
+		margin-left: 5px;
 	  	text-align: center;
 	  	font-size: 30px;
 		font-weight: 700;
 		svg {
-			width: 200px;
-			height: 70px;
+            margin-left: 5px;
+			width: 90px;
+			height: 90px;
 		}
 	}
 }

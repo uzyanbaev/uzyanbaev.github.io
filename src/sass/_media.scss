@@ -1,3 +1,10 @@
+@media (max-width: 1660px) {
+    .header {
+        width: 95%;
+    }
+    
+}
+
 @media (max-width: 1439px) {
     .sidepanel {
         display: none;
@@ -19,8 +26,6 @@
     }
 
 	.header {
-		padding: 0 40px 0 40px;
-		width: 98%;
 		&__navigation {
 			&-list {
 				display: none;
@@ -81,26 +86,17 @@
     }
 
 	.header {
-		padding: 0 25px 0 25px;
-
 		&__navigation {
 			&-list {
 				display: none;
 			}
 		}
-        &__title {
-            a {
-                svg {
-                    width: 150px;
-                }
-            }
-        }
 	}
 
     .main {
         &__wrapper {
             width: 100%;
-            padding: 25px 15px;
+            padding: 35px 20px;
         }
         &__email {
             width: 100%;
@@ -144,8 +140,13 @@
     }
 
     .header {
-        width: 95%;
-        height: 80px;
+        height: 90px;
+        &__title {
+            svg {
+                width: 70px;
+                height: 70px;
+            }
+        }
     }
 
     .languages {
@@ -217,17 +218,16 @@
 @media (max-width: 576px) {
     .container {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 25px;
     }
 
     .page.active {
-        margin-top: -50px;
+        margin-top: -40px;
         margin-bottom: 100px;
     }
 
 	.header {
 		justify-content: left;
-		padding: 0;
 		&__navigation-title {
 			svg {
 				width: 230px;
