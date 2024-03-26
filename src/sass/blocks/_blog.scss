@@ -24,9 +24,9 @@
         padding: 15px;
         cursor: pointer;
         margin-bottom: 20px;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s;
         &:hover {
-            background-color: $hover;
+            transform: translateY(-2.5px);
         }
         &-wrapper {
             margin-left: 10px;

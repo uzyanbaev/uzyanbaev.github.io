@@ -218,11 +218,14 @@
 @media (max-width: 576px) {
     .container {
         width: 100%;
-        padding: 0 25px;
+        padding: 0 15px;
+        &__portfolio {
+            padding: 0 5px !important;
+        }
     }
 
     .page.active {
-        margin-top: -40px;
+        margin-top: -20px;
         margin-bottom: 100px;
     }
 

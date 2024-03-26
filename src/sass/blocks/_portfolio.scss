@@ -84,7 +84,6 @@
 			}
             &:hover {
                 text-decoration: none;
-                background-color: $hover;
                 transform: translateY(-1.5px);
             }
 		}
@@ -112,20 +111,32 @@
         align-items: center;
     }
 	&__tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 		background-color: $block-color;
-		color: #909090;
+		color: $block-info;
 		border-radius: 10px;
         padding: 5px;
-        width: 70%;
+        width: 80%;
         margin-right: 5px;
         font-weight: 700;
+        &_info {
+            margin-right: 5px;
+        }
     }
     &__date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: $block-color;
-		color: #909090;
+		color: $block-info;
 		border-radius: 10px;
         padding: 5px;
-        width: 30%;
+        width: 50%;
         font-weight: 700;
+        &_calendar {
+            margin-right: 5px;
+        }
     }
 }

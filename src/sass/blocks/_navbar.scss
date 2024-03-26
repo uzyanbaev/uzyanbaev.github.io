@@ -71,12 +71,12 @@
         margin: 0;
     }
     &:hover {
-        background-color: $hover;
+        background-color: $block-bg;
     }
 }
 
 .tablink.active {
-    background-color: #545ba174;
+    background-color: $block-color;
 }
 
 
